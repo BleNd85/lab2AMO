@@ -1,6 +1,6 @@
 package org.example.lab2;
 
-public class BozoNelsonSort {
+public class BoseNelsonSort {
 
     public static void bozoNelsonSort(int[] array, int low, int high) {
         if (low < high) {
