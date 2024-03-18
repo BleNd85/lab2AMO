@@ -1,14 +1,13 @@
 package org.example.lab2;
 
 public class BoseNelsonSort {
-
-    public static void bozoNelsonSort(int[] array, int low, int high) {
+    public static void boseNelsonSort(int[] array, int low, int high) {
         if (low < high) {
             int mid = (low + high) / 2;
 
             // Сортування лівої та правої половин
-            bozoNelsonSort(array, low, mid);
-            bozoNelsonSort(array, mid + 1, high);
+            boseNelsonSort(array, low, mid);
+            boseNelsonSort(array, mid + 1, high);
 
             // Злиття відсортованих частин
             merge(array, low, mid, high);
@@ -61,3 +60,4 @@ public class BoseNelsonSort {
         }
     }
 }
+

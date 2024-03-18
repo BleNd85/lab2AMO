@@ -65,7 +65,7 @@ public class Application extends javafx.application.Application {
 
         sortButton.setOnAction(e -> {
             long startTime = System.nanoTime();
-            BoseNelsonSort.bozoNelsonSort(numbers, 0, numbers.length - 1);
+            BoseNelsonSort.boseNelsonSort(numbers, 0, numbers.length - 1);
             long endTime = System.nanoTime();
             double elapsedTimeInSeconds = (double) (endTime - startTime) / 1000000000;
             timeResult.setText("Час сортування: " + String.format("%.6f", elapsedTimeInSeconds) + " с");
